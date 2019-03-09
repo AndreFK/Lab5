@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {Link, Route, BrowserRouter as Router} from 'react-router-dom';
 import Home from'./Home';
-import Clases from './Clases';
+import Classes from './Clases';
 import Students from './Students';
 import * as serviceWorker from './serviceWorker';
 
@@ -13,7 +13,7 @@ const routing = (
           <div>
               <Route exact path="/" component={Home}/>
               <Route path="/students" component={Students}/>
-              <Router path="/classes" component={Clases}/>
+              <Route path="/classes" component={Classes}/>
           </div>
           <div>
               <ul>

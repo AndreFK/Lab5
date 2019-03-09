@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class Clases extends Component{
+class Classes extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -12,7 +12,7 @@ class Clases extends Component{
     }
 
     render(){
-        const list = (clase) => {
+        const listc = (clase) => {
             return(<div>
                      <li>{clase.codigoClase} - {clase.nombre}</li>
                    </div>
@@ -20,11 +20,11 @@ class Clases extends Component{
         }
         return(
             <ul>
-                {this.state.clasesList.map(list)}
+                {this.state.clasesList.map(listc)}
             </ul>
         );
     }
 
 }
 
-export default Clases;
+export default Classes;
